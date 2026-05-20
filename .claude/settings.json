@@ -1,0 +1,25 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(python -c ' *)",
+      "Bash(python \"C:/Users/AORUS/tmp/match_screening.py\")",
+      "Bash(python \"C:/Users/AORUS/tmp/debug_all_pages.py\")",
+      "Bash(python \"C:/Users/AORUS/tmp/match_screening_v2.py\")",
+      "Bash(python \"C:/Users/AORUS/tmp/match_screening_v3.py\")",
+      "Bash(python \"C:/Users/AORUS/tmp/match_screening_v4.py\")",
+      "Skill(update-config)",
+      "Skill(update-config:*)",
+      "Read(//c/Users/AORUS/.claude/**)",
+      "Bash(powershell.exe -Command \"\\(Get-ChildItem 'C:\\\\Windows\\\\SoftwareDistribution\\\\Download' -Recurse -ErrorAction SilentlyContinue | Measure-Object -Property Length -Sum\\).Sum / 1MB\")",
+      "Bash(powershell.exe -Command \"\\(Get-ChildItem 'C:\\\\Windows\\\\SoftwareDistribution' -Recurse -ErrorAction SilentlyContinue | Measure-Object -Property Length -Sum\\).Sum / 1MB\")",
+      "Bash(git add *)",
+      "Bash(git commit *)",
+      "Bash(git config *)",
+      "Bash(net stop *)",
+      "Bash(powershell.exe -Command \"Get-Service wuauserv | Select-Object Status, StartType\")",
+      "Bash(takeown /F \"C:\\\\Windows\\\\SoftwareDistribution\\\\Download\" /R /D Y)",
+      "Bash(cmd.exe /c \"takeown /F C:\\\\Windows\\\\SoftwareDistribution\\\\Download /R /D Y\")",
+      "Bash(powershell.exe -Command \"Remove-Item -Path 'C:\\\\Windows\\\\SoftwareDistribution\\\\Download\\\\*' -Recurse -Force -ErrorAction SilentlyContinue\")"
+    ]
+  }
+}
