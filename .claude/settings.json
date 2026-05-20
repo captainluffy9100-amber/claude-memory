@@ -19,7 +19,8 @@
       "Bash(powershell.exe -Command \"Get-Service wuauserv | Select-Object Status, StartType\")",
       "Bash(takeown /F \"C:\\\\Windows\\\\SoftwareDistribution\\\\Download\" /R /D Y)",
       "Bash(cmd.exe /c \"takeown /F C:\\\\Windows\\\\SoftwareDistribution\\\\Download /R /D Y\")",
-      "Bash(powershell.exe -Command \"Remove-Item -Path 'C:\\\\Windows\\\\SoftwareDistribution\\\\Download\\\\*' -Recurse -Force -ErrorAction SilentlyContinue\")"
+      "Bash(powershell.exe -Command \"Remove-Item -Path 'C:\\\\Windows\\\\SoftwareDistribution\\\\Download\\\\*' -Recurse -Force -ErrorAction SilentlyContinue\")",
+      "Bash(gh auth *)"
     ]
   }
 }
